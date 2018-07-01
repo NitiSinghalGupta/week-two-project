@@ -29,6 +29,7 @@ let cart = [];
 let x = document.getElementsByClassName('atc');
 for(let i=0; i<x.length; i++){
 x[i].addEventListener('click',function(e){
+
   let buttonName = e.target.getAttribute('data-name');
   let buttonPrice = e.target.getAttribute('data-price');
   let item = {
@@ -46,7 +47,7 @@ x[i].addEventListener('click',function(e){
 
 
 function updateCart() {
-  let sum = 0;
+  let sum = Number(0) ;
   for(let i = 0; i < cart.length ; i++){
     let item = cart[i];
 
@@ -73,9 +74,14 @@ function updateCart() {
     cross.classList.add('fa-times');
     li.appendChild(cross);
     ul.appendChild(li);
+    cross.addEventListener('click', function(e){
+      ul.removeChild(li);
 
-  }
+      sum = sum - Number(item.price);
+      document.getElementById('cart-total').innerHTML = '$' + Number(sum).toFixed(2);
+    });
+}
 
   // update the price
-  document.getElementById('cart-total').innerHTML = '$' + sum;
+  document.getElementById('cart-total').innerHTML = '$' + Number(sum).toFixed(2);
 }
