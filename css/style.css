@@ -1,7 +1,16 @@
 .uppercase {
   text-transform: uppercase;
 }
-
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+.shopping-items{
+  width: 90%;
+}
+.shopping-cart {
+  width: 10%;
+}
 #logo{
   width: 150px;
   height: 150px;
@@ -30,4 +39,31 @@ nav {
   display: flex;
   list-style: none;
   justify-content: center;
+}
+img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+body{
+
+}
+main {
+ width: 1230px;
+  margin: 0 auto;
+}
+footer .flexnav {
+  display: flex;
+  justify-content: center;
+  list-style:none;
+  padding: 10px 0;
+}
+footer div {
+  text-align: center;
+}
+footer ul li {
+  padding: 0 30px;
+}
+.fa {
+  font-size: 36px;
 }

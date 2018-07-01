@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Mr. Green Grocery Store | America's Healthiest Grocery Store</title>
 </head>
@@ -27,11 +28,18 @@
          </ul>
      </nav>
 </header>
-<main>
-  <div>
+<main class="main-content">
+  <div class="shopping-items">
     <section id="fruits">
-       <img id="f1" src="img/bananas-698608_640.jpg" alt="logo" />
-       <img id="f2" src="img/cherries-1465801_640.jpg" alt="logo" />
+       <div class="card-item">
+       <img id="f1" src="img/bananas-698608_640.jpg" alt="bananas" />
+       <div class="info">
+         <div class="name"><a href="#">Bananas</a></div>
+         <div class="price"><a href="#">Priced from $1.99</a></div>
+         <button class="atc">Add to cart</button>
+       </div>
+     </div>
+       <img id="f2" src="img/cherries-1465801_640.jpg" alt="cherries" />
        <img id="f3" src="img/pomegranate-3383814_640.jpg" alt="logo" />
        <img id="f4" src="img/strawberries-3431119_640.jpg" alt="logo" />
     </section>
@@ -63,28 +71,27 @@
         <img id="c5" src="img/sweet-608423_640.jpg" alt="logo" />
       </section>
   </div>
-  <div>
+  <div class="shopping-cart">
     <aside>
       <h3>Shopping Cart</h3>
         <ul>
-
         </ul>
-    </aside>
+      </aside>
   </div>
 </main>
 <footer>
-        <ul>
+        <ul class="footer-nav flexnav">
           <li>About</li>
           <li>Contact Us</li>
           <li>Legal</li>
           <li>Privacy</li>
         </ul>
         <div>Connect With Us </div>
-        <ul>
-          <li>facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
-          <li>Youtube</li>
+        <ul class="social-nav flexnav">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="http://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://youtube.com/"><i class="fa fa-youtube"></i></a></li>
         </ul>
 </footer>
 <script> </script>
