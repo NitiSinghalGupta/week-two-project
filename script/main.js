@@ -1,5 +1,11 @@
 
+function repeatTask (clickContent, navResutls){
+  document.getElementById(clickContent).addEventListener("click", function(e){
+    document.getElementById(navResutls).classList.remove('hidden');
+  });
+}
 
+repeatTask('shop-online','secondary-nav');
 
 document.getElementById('frui').addEventListener("click", function(e){
   document.getElementById('fruit').classList.remove('hidden');
