@@ -67,8 +67,13 @@ function updateCart() {
 
     let li = document.createElement('li');
     li.innerHTML = item.name + ' for $' + item.price;
-
+// creating the remove button in the shopping cart using font awesome class
+    let cross = document.createElement('i');
+    cross.classList.add('fa');
+    cross.classList.add('fa-times');
+    li.appendChild(cross);
     ul.appendChild(li);
+
   }
 
   // update the price
