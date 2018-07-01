@@ -76,10 +76,24 @@ function updateCart() {
     ul.appendChild(li);
     cross.addEventListener('click', function(e){
       ul.removeChild(li);
+      let cartIndex = findIndex(cart, item);
+      if(cartIndex > -1) {
+        cart.splice(cartIndex, 1);
+      }
 
       sum = sum - Number(item.price);
       document.getElementById('cart-total').innerHTML = '$' + Number(sum).toFixed(2);
     });
+}
+
+function findIndex(array, item) {
+  for(let index = 0; index < array.length; index++) {
+    if(array[index] === item) {
+      return index;
+    }
+  }
+
+  return -1;
 }
 
   // update the price
