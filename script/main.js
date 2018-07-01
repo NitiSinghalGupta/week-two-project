@@ -1,18 +1,35 @@
 
 
-document.getElementById('shop-online').addEventListener("click", displaySecNav);
 
-function displaySecNav(e){
-  document.getElementById('secondary-nav').classList.remove('hidden');
-}
+document.getElementById('frui').addEventListener("click", function(e){
+  document.getElementById('fruit').classList.remove('hidden');
+});
 
-document.getElementById('frui').addEventListener("click",displayFruits);
+
+
+document.getElementById('veg').addEventListener("click",displayFruits);
 
 function displayFruits(e){
-  document.getElementById('fruits').classList.remove('hidden');
+  document.getElementById('veggies').classList.remove('hidden');
 }
 
+document.getElementById('cer').addEventListener("click",displayFruits);
 
+function displayFruits(e){
+  document.getElementById('cereal').classList.remove('hidden');
+}
+
+document.getElementById('jui').addEventListener("click",displayFruits);
+
+function displayFruits(e){
+  document.getElementById('juice').classList.remove('hidden');
+}
+
+document.getElementById('ca').addEventListener("click",displayFruits);
+
+function displayFruits(e){
+  document.getElementById('candy').classList.remove('hidden');
+}
 
 
 

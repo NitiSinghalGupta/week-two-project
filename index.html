@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Mr. Green Grocery Store | America's Healthiest Grocery Store</title>
 </head>
@@ -21,16 +22,16 @@
     </div>
          <ul id='secondary-nav' class='secondary-nav nav-list hidden'>
            <li id="frui"><a href="#">Fruits</a></li>
-           <li><a href="#">Cereal</a></li>
-           <li><a href="#">Juice</a></li>
-           <li><a href="#">Candy</a></li>
-           <li><a href="#">Vegetable</a></li>
+           <li id="cer"><a href="#">Cereal</a></li>
+           <li id="jui"><a href="#">Juice</a></li>
+           <li id="ca"><a href="#">Candy</a></li>
+           <li id="veg"><a href="#">Vegetable</a></li>
          </ul>
      </nav>
 </header>
 <main class="main-content">
   <div class="shopping-items">
-    <section id="fruits" class='hidden'>
+    <section id="fruit" class='hidden'>
      <div class="card-item">
        <img id="f1" src="img/bananas-698608_640.jpg" alt="bananas" />
        <div class="info">
@@ -118,7 +119,7 @@
          <button class="atc">Add to cart</button>
        </div>
     </section>
-    <section id='juices' class='hidden'>
+    <section id='juice' class='hidden'>
       <img id="jc1" src="img/juice-2331722_640.jpg" alt="orange juice" />
       <div class="info">
         <div class="name"><a href="#">Orange Juice</a></div>
@@ -198,12 +199,17 @@
           <li>Legal</li>
           <li>Privacy</li>
         </ul>
-        <div>Connect With Us </div>
+        <div>Connect With Us</div>
         <ul class="social-nav flexnav">
-          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a href="http://twitter.com/"><i class="fa fa-twitter-square"></i></a></li>
-          <li><a href="http://instagram.com/"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="http://youtube.com/"><i class="fa fa-youtube"></i></a></li>
+          <div class="wrapper">
+            <ul>
+              <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+              <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+              <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+              <li class="google"><i class="fa fa-google fa-2x" aria-hidden="true"></i></li>
+              <li class="whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+            </ul>
+          </div>
         </ul>
 </footer>
 <script type="text/javascript" src="script/main.js"></script>
